@@ -7,10 +7,12 @@ const JoinUs = document.querySelector('.Join-Us');
 
 registerLink.addEventListener('click', ()=> {
     wrapper.classList.add('active');
+    document.getElementById("register_form").reset();
 });
 
 loginLink.addEventListener('click', ()=> {
     wrapper.classList.remove('active');
+    document.getElementById("login_form").reset();
 });
 
 btnPopup.addEventListener('click', ()=> {
